@@ -118,8 +118,9 @@ nav a {
 .shop{
     margin-top: 100px;
     display: flex;
-    justify-content: center;
+    align-content: flex-start;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .card {
     background-color: #fff;
@@ -128,8 +129,8 @@ nav a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 450px;
-    min-height: 400px;
+    height: calc(width);
+    min-height: 350px;
     width: 20%;
     min-width: 350px;
     margin: 15px 10px 10px 10px;
@@ -153,10 +154,9 @@ nav a {
     margin-bottom: 10px;
 }
 .card img{
-    width:95%;
+    width:60%;
     margin:5px 5px;
-    max-height: 320px;
-    height:90%;
+    height:60%;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
@@ -388,7 +388,7 @@ body.modal-open {
         min-width: unset;
     }
     .card{
-        height: 190px;
+        height: calc(width);
     }
     .card img{
         height:50%;
