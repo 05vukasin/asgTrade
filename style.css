@@ -130,9 +130,9 @@ nav a {
     justify-content: space-between;
     align-items: center;
     height: calc(width);
-    min-height: 350px;
+    
     width: 20%;
-    min-width: 350px;
+    
     margin: 15px 10px 10px 10px;
     box-shadow: 10px 10px 10px lightslategray;
     border-radius: 12px;
