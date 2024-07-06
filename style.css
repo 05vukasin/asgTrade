@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    color: #000000;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #0257a6;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 25px;
+}
+.logo img{
+    height:45px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links a {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.menu-toggle {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #000000;
+    color: #fff;
+    transition: right 0.3s ease;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.menu ul li {
+    margin: 20px 0;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+.menu-logo{
+    justify-content: center;
+    display: flex;
+}
+.menu-logo img{
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: #fff solid;
+    width:50%;
+    height: auto;
+}
+.close-menu {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.shop{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #fff;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 450px;
+    min-height: 400px;
+    width: 20%;
+    min-width: 350px;
+    margin: 15px 10px 10px 10px;
+    box-shadow: 10px 10px 10px lightslategray;
+    border-radius: 12px;
+    position: relative; /* Dodato za pozicioniranje dugmeta */
+}
+.opis{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: none;
+}
+.proizvod-btn{
+    width: 100%;
+    height:20%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.card img{
+    width:95%;
+    margin:5px 5px;
+    max-height: 320px;
+    height:90%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.card button{
+    background-color: #000000;
+    color: #fff;
+    border-radius: 10px;
+    width: 70%;
+    height:40px;
+    align-items: baseline;
+    font-size: 20px;
+}
+.card button a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer {
+    background-color: #0257a6;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+    bottom: 0;
+}
+.content{
+    margin-top: 70px;
+}
+.content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.left{
+    float: left;
+    width: 50%;
+}
+.left img{
+    height:90%;
+    width: 90%;
+}
+#naslov{
+    font-size: 30px;
+}
+#opis{
+    font-size: 14px;
+}
+.right{
+    float: right;
+    width: 50%;
+}
+.right button{
+    margin-top: 10px;
+    width: 200px;
+    height:40px;
+}
+
+.left{
+    display: inline;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.info p {
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.info input {
+    padding: 10px;
+    height: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.info button{
+    background-color: #000000;
+    color: #fff;
+    height: 25px;
+    border-radius: 5px;
+}
+.slajder {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Prilagodite prema vašim potrebama */
+    overflow: hidden;
+}
+
+.slajder img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: left 0.5s ease;
+    border-radius: 5px;
+}
+
+.slajder img.active {
+    left: 0;
+}
+
+/* Modal Styles */
+/* Postavljanje osnovnih stilova za modal */
+.modal {
+    display: none; /* Sakrij modal po defaultu */
+    position: fixed; /* Pozicioniranje modal-a na ekranu */
+    z-index: 1000; /* Postavljanje visoke vrednosti z-index za modal */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Omogućavanje skrolovanja za dugačke sadržaje */
+    background-color: rgba(0, 0, 0, 0.7); /* Tamna pozadina */
+}
+
+/* Stilovi za modal sadržaj */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centriranje modal-a vertikalno */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Širina modal-a */
+    border-radius: 10px; /* Dodavanje zaobljenih uglova */
+}
+#popup-buy-now{
+    width: 50%;
+}
+/* Stilovi za dugme za zatvaranje modal-a */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Onemogućavanje rada pozadine kada je modal aktivan */
+body.modal-open {
+    overflow: hidden; /* Onemogućavanje skrolovanja na pozadini */
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.velicina button {
+    background: #fff;
+    color: #000000;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid #000;
+    margin: 5px;
+}
+
+.velicina button:hover {
+    background: #888;
+}
+
+.velicina button.selected {
+    background: #000;
+    color: #fff;
+}
+#soldOut{
+    border: red solid;
+    color: red;
+    margin-bottom: 10px;
+    padding: 5px 10px 5px 10px;
+    width: fit-content;
+    font-size: 25px;
+    font-weight: 600;
+}
+.color button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin: 5px;
+}
+
+.color button.selected {
+    border: 2px solid #000;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+    
+    .card {
+        width: 45%;
+        min-width: unset;
+    }
+    .card{
+        height: 240px;
+    }
+    .card img{
+        height:60%;
+    }
+    
+    .left, .right {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .info {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/*About css---------------------------------------------------*/
+
+.about-content h1{
+   font-size: 40px;
+   font-weight: 800;
+   padding: 10px;
+}
+.parallax-slika{
+    height: 160px;
+    background-image: url("img/pozadina.avif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 90px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 25px;
+}
+.blog-tekst{
+    padding: 50px;
+    font-size: 20px;
+}
+.hero {
+    margin-top: 60px;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 70vh;
+    width: 100%;
+    background: #000000;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+.hero h1{
+    font-size: 100px;
+}
+.hero p{
+    font-size: 40px;
+}
+#logo {
+    position: relative;
+}
+
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill {
+    to{
+        fill:white;
+    }
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#logo{
+    animation: fill 1s ease forwards 3.8s;
+}
+#logo path{
+    transition: fill 1s ease 3.8s; /* Tranzicija za fill svojstvo */
+}
+#logo path:nth-child(1){
+    stroke-dasharray:84.1178970336914;
+    stroke-dashoffset: 84.1178970336914;
+    animation: line-anim 2s ease forwards 1.8s;
+}
+#logo path:nth-child(2){
+    stroke-dasharray:359.08978271484375;
+    stroke-dashoffset: 359.08978271484375;
+    animation: line-anim 2s ease forwards 1.6s;
+}
+#logo path:nth-child(3){
+    stroke-dasharray:497.164794921875;
+    stroke-dashoffset: 497.164794921875;
+    animation: line-anim 2s ease forwards 1.4s;
+}
+#logo path:nth-child(4){
+    stroke-dasharray:245.54583740234375;
+    stroke-dashoffset: 245.54583740234375;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+#logo path:nth-child(5){
+    stroke-dasharray:325.36370849609375;
+    stroke-dashoffset: 325.36370849609375;
+    animation: line-anim 2s ease forwards 1s;
+}
+#logo path:nth-child(6){
+    stroke-dasharray:381.39959716796875;
+    stroke-dashoffset: 381.39959716796875;
+    animation: line-anim 2s ease forwards 0.8s;
+}
+#logo path:nth-child(7){
+    stroke-dasharray:359.091796875;
+    stroke-dashoffset: 359.091796875;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+#logo path:nth-child(8){
+    stroke-dasharray:497.16400146484375;
+    stroke-dashoffset: 497.16400146484375;
+    animation: line-anim 2s ease forwards 0.4s;
+}
+#logo path:nth-child(9){
+    stroke-dasharray:465.50244140625;
+    stroke-dashoffset: 465.50244140625;
+    animation: line-anim 2s ease forwards 0.2s;
+}
+#logo path:nth-child(10){
+    stroke-dasharray:527.0281982421875;
+    stroke-dashoffset: 527.0281982421875;
+    animation: line-anim 2s ease forwards ;
+}
+
+@media (max-width: 600px) {
+    #logo{
+        width:95%;
+        margin:10px;
+    }
+    .hero{
+        height:40vh;
+    }
+    .hero h1{
+        font-size: 40px;
+    }
+    .hero p{
+        font-size: 20px;
+    }
+}
+
+.video-spot{
+    width:100%;
+    background: #000;
+}
+.video-spot video{
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+
+}

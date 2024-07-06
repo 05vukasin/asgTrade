@@ -1,0 +1,177 @@
+{
+    "products": [
+        {
+            "title": "Badge Tracksuit",
+            "description": "Stilova i udobna crna majica, idealna za svakodnevno nošenje.",
+            "price": 1500,
+            "image": "img/badgetracksuit1.JPG",
+            "slajder": [
+                "img/badgetracksuit1.JPG",
+                "img/badgetracksuit2.JPG",
+                "img/badgetracksuit3.JPG",
+                "img/badgetracksuit4.JPG",
+                "img/badgetracksuit5.JPG",
+                "img/badgetracksuit6.JPG"
+            ],
+            "soldOut": false
+        },
+        {
+            "title": "Broderie Tracksuit",
+            "description": "Kvalitetna bela majica sa modernim dizajnom.",
+            "price": 1400,
+            "image": "img/broderietracksuit1.JPG",
+            "slajder": [
+                "img/broderietracksuit1.JPG",
+                "img/broderietracksuit2.JPG",
+                "img/broderietracksuit3.JPG",
+                "img/broderietracksuit4.JPG",
+                "img/broderietracksuit5.JPG",
+                "img/broderietracksuit6.JPG"
+            ],
+            "soldOut": true
+        },
+        {
+            "title": "Broderie Zip",
+            "description": "Elegantna plava majica koja se može kombinovati sa različitim stilovima.",
+            "price": 1600,
+            "image": "img/broderiezip1.JPG",
+            "slajder": [
+                "img/broderiezip1.JPG",
+                "img/broderiezip2.JPG",
+                "img/broderiezip3.JPG",
+                "img/broderiezip4.JPG"
+            ],
+            "soldOut": false
+        },
+        {
+            "title": "Badge Tracksuit",
+            "description": "Stilova i udobna crna majica, idealna za svakodnevno nošenje.",
+            "price": 1500,
+            "image": "img/badgetracksuit1.JPG",
+            "slajder": [
+                "img/badgetracksuit1.JPG",
+                "img/badgetracksuit2.JPG",
+                "img/badgetracksuit3.JPG",
+                "img/badgetracksuit4.JPG",
+                "img/badgetracksuit5.JPG",
+                "img/badgetracksuit6.JPG"
+            ],
+            "soldOut": false
+        },
+        {
+            "title": "Broderie Tracksuit",
+            "description": "Kvalitetna bela majica sa modernim dizajnom.",
+            "price": 1400,
+            "image": "img/broderietracksuit1.JPG",
+            "slajder": [
+                "img/broderietracksuit1.JPG",
+                "img/broderietracksuit2.JPG",
+                "img/broderietracksuit3.JPG",
+                "img/broderietracksuit4.JPG",
+                "img/broderietracksuit5.JPG",
+                "img/broderietracksuit6.JPG"
+            ],
+            "soldOut": true
+        },
+        {
+            "title": "Broderie Zip",
+            "description": "Elegantna plava majica koja se može kombinovati sa različitim stilovima.",
+            "price": 1600,
+            "image": "img/broderiezip1.JPG",
+            "slajder": [
+                "img/broderiezip1.JPG",
+                "img/broderiezip2.JPG",
+                "img/broderiezip3.JPG",
+                "img/broderiezip4.JPG"
+            ],
+            "soldOut": false
+        },
+        {
+            "title": "Badge Tracksuit",
+            "description": "Stilova i udobna crna majica, idealna za svakodnevno nošenje.",
+            "price": 1500,
+            "image": "img/badgetracksuit1.JPG",
+            "slajder": [
+                "img/badgetracksuit1.JPG",
+                "img/badgetracksuit2.JPG",
+                "img/badgetracksuit3.JPG",
+                "img/badgetracksuit4.JPG",
+                "img/badgetracksuit5.JPG",
+                "img/badgetracksuit6.JPG"
+            ],
+            "soldOut": false
+        },
+        {
+            "title": "Broderie Tracksuit",
+            "description": "Kvalitetna bela majica sa modernim dizajnom.",
+            "price": 1400,
+            "image": "img/broderietracksuit1.JPG",
+            "slajder": [
+                "img/broderietracksuit1.JPG",
+                "img/broderietracksuit2.JPG",
+                "img/broderietracksuit3.JPG",
+                "img/broderietracksuit4.JPG",
+                "img/broderietracksuit5.JPG",
+                "img/broderietracksuit6.JPG"
+            ],
+            "soldOut": true
+        },
+        {
+            "title": "Broderie Zip",
+            "description": "Elegantna plava majica koja se može kombinovati sa različitim stilovima.",
+            "price": 1600,
+            "image": "img/broderiezip1.JPG",
+            "slajder": [
+                "img/broderiezip1.JPG",
+                "img/broderiezip2.JPG",
+                "img/broderiezip3.JPG",
+                "img/broderiezip4.JPG"
+            ],
+            "soldOut": false
+        },
+        {
+            "title": "Badge Tracksuit",
+            "description": "Stilova i udobna crna majica, idealna za svakodnevno nošenje.",
+            "price": 1500,
+            "image": "img/badgetracksuit1.JPG",
+            "slajder": [
+                "img/badgetracksuit1.JPG",
+                "img/badgetracksuit2.JPG",
+                "img/badgetracksuit3.JPG",
+                "img/badgetracksuit4.JPG",
+                "img/badgetracksuit5.JPG",
+                "img/badgetracksuit6.JPG"
+            ],
+            "soldOut": false
+        },
+        {
+            "title": "Broderie Tracksuit",
+            "description": "Kvalitetna bela majica sa modernim dizajnom.",
+            "price": 1400,
+            "image": "img/broderietracksuit1.JPG",
+            "slajder": [
+                "img/broderietracksuit1.JPG",
+                "img/broderietracksuit2.JPG",
+                "img/broderietracksuit3.JPG",
+                "img/broderietracksuit4.JPG",
+                "img/broderietracksuit5.JPG",
+                "img/broderietracksuit6.JPG"
+            ],
+            "soldOut": true
+        },
+        {
+            "title": "Broderie Zip",
+            "description": "Elegantna plava majica koja se može kombinovati sa različitim stilovima.",
+            "price": 1600,
+            "image": "img/broderiezip1.JPG",
+            "slajder": [
+                "img/broderiezip1.JPG",
+                "img/broderiezip2.JPG",
+                "img/broderiezip3.JPG",
+                "img/broderiezip4.JPG"
+            ],
+            "soldOut": false
+        }
+
+    ]
+}

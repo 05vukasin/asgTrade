@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>asgTrade</title>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="logo"><a href="index.html">AsgTrade</a></div>
+            <ul class="nav-links">
+                <a href="index.html"><i class="fa-solid fa-bag-shopping"></i>  Shop</a>
+                <a href="https://www.instagram.com/asgwebagency/"><i class="fa-brands fa-instagram"></i>  Social</a>
+                <a href="about.html"><i class="fa-solid fa-magnifying-glass"></i>  About</a>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                ☰
+            </div>
+            <div class="menu" id="menu">
+                <button class="close-menu" id="closeMenu" >&times;</button>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-bag-shopping"></i> Shop</a></li>
+                    <li><a href="https://www.instagram.com/asgwebagency/"><i class="fa-brands fa-instagram"></i> Social</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-magnifying-glass"></i> About</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+        <section class="content">
+            <div class="left">      
+                <!--<img id="slika" src="https://via.placeholder.com/600x400" alt="Proizvod">-->
+                <div id="slajder" class="slajder">
+                    <!-- Slike će biti dinamički dodate ovde -->
+                </div>
+            </div>
+            
+            <div class="right">
+                <div class="info">
+                    <h1 id="soldOut">Sold Out</h1>
+                    <h1 id="naslov">Naslov</h1>
+                    <h2 id="cena">Cena</h2>
+                    <p id="opis">Opis</p>
+                    <p>Velicina</p>
+                    <div class="velicina">
+                        <button class="size-btn">XS</button>
+                        <button class="size-btn">S</button>
+                        <button class="size-btn">M</button>
+                        <button class="size-btn">L</button>
+                        <button class="size-btn">XL</button>
+                        <button class="size-btn">XXL</button>
+                    </div>
+                    <p>Boja</p>
+                    <div class="color">
+                        <button class="color-btn gray"></button>
+                    </div>
+                    <button id="buy-now" onclick="openPopup()">Buy Now</button>
+                </div>
+            </div>
+            
+        </section>
+        <!-- Pop-up Modal -->
+        <div class="modal" id="popup">
+            <div class="modal-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <div class="info">
+                    <p>Ime</p>
+                    <input type="text" name="name" id="popup-name">
+                    <p>Broj telefona</p>
+                    <input type="tel" name="phone" id="popup-phone">
+                    <p>Email</p>
+                    <input type="email" name="email" id="popup-email">
+                    <p>Adresa</p>
+                    <input type="text" name="address" id="popup-address">
+                    <button id="popup-buy-now" onclick="closePopup()" onclick="sendEmail()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <section class="footer">
+            <p> asg.webagency@gmail.com  </p>
+            <p>Copyright &copy; 2021 asgTrade</p>
+        </section>
+        
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script type="text/javascript">
+            (function(){
+                gapi.load('client:auth2', initClient);
+            })();
+        </script>
+
+        <script src="script.js"></script>
+
+    </body>
+    </html>
